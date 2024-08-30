@@ -23,6 +23,9 @@ const addNewGoal = () => {
     const goalList = document.querySelector('#goalList');
 
     const listItems = goalList.getElementsByTagName('li');
+    for (let i=0; i<listItems.length; i++) {
+        
+    }
     
     /*const listItems = goalList.getElementsByTagName('li');
     for (let i = 0; i < listItems.length; i++) {
