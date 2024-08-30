@@ -24,16 +24,11 @@ const addNewGoal = () => {
 
     const listItems = goalList.getElementsByTagName('li');
     for (let i=0; i<listItems.length; i++) {
-        
-    }
-    
-    /*const listItems = goalList.getElementsByTagName('li');
-    for (let i = 0; i < listItems.length; i++) {
-        if (listItems[i].textContent === goalInput) {
+        if (listItems[i].textContent.toLowerCase() === goalInput.toLowerCase()) {
             alert('Goal already exists!');
             return;
         }
-    }*/
+    }
     
     const newGoal = document.createElement('li');
     newGoal.textContent = goalInput;
